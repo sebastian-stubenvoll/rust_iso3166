@@ -105,8 +105,7 @@ f = csv.reader(open("iso3166_2.data", "r"), delimiter=",", quotechar='"')
 subdivisions = {}
 for x in f:
     ts1 = x[1].split("-")
-
-    region_code = x[1]
+    region_code = ts1[1]
     country_code = x[4]
     country_name = x[0]
     sub_name = x[2]
