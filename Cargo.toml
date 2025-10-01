@@ -13,6 +13,9 @@ keywords=["ISO3166", "ISO3166-1", "ISO3166-2", "ISO3166-3"]
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[features]
+tis = []
+
 [dependencies]
 phf = { version = "^0.11.1", features = ["macros"] }
 

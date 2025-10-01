@@ -6,11 +6,14 @@ use phf::phf_map;
 use phf::Map;
 pub mod iso3166_2;
 pub mod iso3166_3;
+#[cfg(feature = "tis")]
+pub mod tis_ext;
 use std::hash::Hash;
 #[cfg(all(direct_wasm,target_arch = "wasm32"))]
 use wasm_bindgen::prelude::*;
 #[cfg(all(direct_wasm,target_arch = "wasm32"))]
 use js_sys::Array;
+#[]
 
 /// # Sample code
 /// ```
